@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id = "@+id/DifficultyTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Select a Difficulty"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".1"/>
+    <Button
+        android:layout_width=".75in"
+        android:layout_height="wrap_content"
+        android:text= "Easy"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/DifficultyTXT"
+        app:layout_constraintStart_toStartOf="@id/DifficultyTXT"
+        app:layout_constraintTop_toBottomOf="@id/DifficultyTXT"
+        android:layout_marginTop="60dp"
+        android:id = "@+id/Easy"
+        android:backgroundTint="#00FF00"
+        >
+
+    </Button>
+    <Button
+        android:layout_width=".75in"
+        android:layout_height="wrap_content"
+        android:text ="Medium"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/Easy"
+        app:layout_constraintStart_toStartOf="@id/Easy"
+        app:layout_constraintTop_toBottomOf="@id/Easy"
+        android:layout_marginTop="60dp"
+        android:id="@+id/Medium"
+        android:backgroundTint="#FFA500">
+
+    </Button>
+    <Button
+        android:layout_width=".75in"
+        android:layout_height="wrap_content"
+        android:text="Hard"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/Medium"
+        app:layout_constraintStart_toStartOf="@id/Medium"
+        app:layout_constraintTop_toBottomOf="@id/Medium"
+        android:layout_marginTop="60dp"
+        android:id="@+id/Hard"
+        android:backgroundTint="#FF0000"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
